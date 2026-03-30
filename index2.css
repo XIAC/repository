@@ -1,0 +1,126 @@
+/* RESET BÁSICO */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor{
+    display:flex;
+    flex-direction:column; /* Apila todas las secciones verticalmente */
+}
+
+/* ===== HEADER ===== */
+header{
+    display:flex;
+    justify-content:space-between; /* Logo a la izquierda, nav a la derecha */
+    align-items:center; /* Centra verticalmente */
+    padding:15px;
+    border-bottom:1px solid black;
+}
+
+/* NAV CONTENEDOR */
+nav{
+    display:flex;
+    align-items:center; /* Alinea todos los elementos en el centro vertical */
+    gap:20px; /* Espacio entre bloques */
+}
+
+/* MENÚ PRINCIPAL */
+.menu{
+    display:flex; /* Convierte los li en fila */
+    list-style:none;
+    gap:15px; /* Espacio entre items */
+}
+
+/* MENÚ DE SESIÓN */
+.sesion{
+    display:flex; /* También en fila */
+    list-style:none;
+    gap:10px;
+}
+
+/* BOTÓN IDIOMA */
+.idioma{
+    padding:5px 10px;
+}
+
+/* ELIMINAMOS EL CLEAR (ya no se usa con flexbox) */
+.clear{
+    display:none;
+}
+
+/* ===== HERO / IMAGEN ===== */
+.imagen{
+    display:flex;
+    flex-direction:column; /* Texto en columna */
+    justify-content:center; /* Centrado vertical */
+    align-items:center; /* Centrado horizontal */
+    height:300px;
+    border-bottom:1px solid black;
+    text-align:center;
+}
+
+/* ===== INFORMACIÓN ===== */
+.informacion{
+    display:flex;
+    justify-content:center; /* Centra horizontal */
+    align-items:center; /* Centra vertical */
+    gap:40px; /* Espacio entre video y botón */
+    padding:20px;
+    border-bottom:1px solid black;
+}
+
+/* CAJA VIDEO */
+.seccion-video{
+    width:120px;
+    height:120px;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center; /* Centra el texto dentro */
+}
+
+/* BOTÓN CONTENEDOR */
+.boton{
+    display:flex;
+    align-items:center; /* Centra el botón verticalmente */
+}
+
+/* BOTÓN */
+.download{
+    padding:10px 20px;
+}
+
+/* ===== DESCRIPCIÓN ===== */
+.descripcion{
+    display:flex;
+    justify-content:center; /* Centra las tarjetas */
+    gap:20px; /* Espacio entre tarjetas */
+    padding:20px;
+}
+
+/* TARJETA */
+.tarjeta{
+    display:flex;
+    flex-direction:column; /* Imagen arriba, texto abajo */
+    align-items:center;
+    width:200px;
+}
+
+/* IMAGEN TARJETA */
+.tar-img{
+    width:100%;
+    height:120px;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+/* TEXTO TARJETA */
+.tar-texto{
+    text-align:center;
+}
